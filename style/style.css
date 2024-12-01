@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+.bg-nav,
+.bg-logo {
+  background-color: #60686a;
+}
+
+#nav {
+  font-weight: 300;
+  font-size: 1rem;
+  position: relative;
+}
+
+#nav a {
+  padding-left: 50px;
+
+  font-family: "Kanit", sans-serif;
+}
+
+#nav a:hover {
+  color: #ffffff;
+}
+
+.text-logo:hover {
+  color: #ffffff;
+}
+
+.button-color:hover {
+  background-color: #ffffff;
+}
+
+.navbar {
+  padding: 0.2rem;
+}
+
+#home {
+  background: url(/img/bg-portopolio-01.png);
+  height: 100vh;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-home {
+  height: 100vh;
+}
+
+.hero-right img {
+  width: 30vw;
+  z-index: 4;
+}
+
+.opa {
+  background-color: #181d1e;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.3;
+  position: absolute;
+  z-index: 1;
+}
+
+.text-info {
+  z-index: 10;
+}
+
+.kata h3 {
+  font-size: 1.9vw;
+  min-width: 10vh;
+  padding: 0;
+  margin: 0;
+}
+.kata h1 {
+  font-size: 4.5vw;
+  padding: 0;
+  margin: 0;
+}
+
+.kata {
+  line-height: 1.5rem;
+}
+
+.img-about {
+  width: 100%;
+}
+
+.text-about,
+.text-info {
+  font-family: "outfit";
+}
+
+#about-me {
+  height: 100vh;
+}
+
+.about-left img {
+  width: 50vw;
+}
+
+#skill {
+  height: 100vh;
+}
+
+.card-icon {
+  position: relative;
+  background-color: gray;
+  width: 115px;
+  height: 115px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon img {
+  width: 60px;
+  filter: grayscale(1);
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+
+.img-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -10000px;
+}
+.card-icon:hover .img-title {
+  left: 0px;
+}
+.card-icon:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+}
+
+.img-title h5 {
+  color: #fff;
+  line-height: 2px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 150px;
+}
+
+#contact {
+  height: 90vh;
+}
+.kontak-icon {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.kontak-icon img {
+  width: 100px;
+}
+
+.socialmedia-icon img {
+  filter: grayscale(1);
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+.socialmedia-icon:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+}
+
+footer {
+  height: 8vh;
+}
+@media screen and (max-width: 764px) {
+  .text-home {
+    margin-bottom: 120px;
+    margin-top: 2rem;
+  }
+  .kata u {
+    font-size: 1.2rem;
+  }
+  .kata h1 {
+    font-size: 2.5rem;
+  }
+  #home {
+    height: 110vh;
+  }
+  .hero-right {
+    margin-top: 2.5rem;
+  }
+  .hero-right img {
+    width: 50vw;
+    z-index: 4;
+  }
+  #about-me {
+    height: 120vh;
+  }
+}
+@media screen and (max-width: 376px) {
+  .text-home {
+    margin-top: 10px;
+  }
+  #home {
+    height: 100vh;
+  }
+  .kata p {
+    font-size: 0.7rem;
+  }
+
+  #contact {
+    height: 100vh;
+  }
+  label {
+    font-size: 0.7rem;
+  }
+}
